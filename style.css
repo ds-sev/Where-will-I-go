@@ -1,0 +1,40 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
+
+.body {
+  margin: 0 auto;
+  width: 1280px;
+  height: 100%;
+  border: 1px solid red;
+  font-family: 'BasisGrotesqueMonoPro', sans-serif;
+}
+/*=====HEADER=====*/
+
+.header {
+  margin: 0 auto;
+  padding: 50px 0 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1142px;
+  border: 1px solid red;
+}
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 35px;
+}
+.header__claim {
+  font-size: 13px;
+}
+.list__item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #020202;
+}
+.link {
+  color: #020202;
+  text-decoration: none;
+}
