@@ -260,6 +260,7 @@
   font-size: 12px;
   line-height: 2;
   font-weight: 700;
+  color: #010101;
 }
 
 .quote__text {
@@ -267,4 +268,5 @@
   font-size: 13px;
   word-spacing: -4px;
   line-height: 1.6;
+  color: #010101;
 }
