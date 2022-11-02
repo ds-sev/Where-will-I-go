@@ -159,11 +159,13 @@
   min-width: 355px;
   object-fit: cover;
 }
+
 @media screen and (max-width: 964px) {
   .intro__image {
     padding-right: 0;
   }
 }
+
 @media screen and (max-width: 684px) {
   .intro__image {
     width: 100%;
@@ -207,9 +209,12 @@
 }
 
 .places__title {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 34px;
   line-height: 1.2;
+  word-spacing: -10px;
+  letter-spacing: -.2px;
+  font-kerning: auto;
 }
 
 .places__paragraphs {
@@ -220,4 +225,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
+}
+
+.footer {
+height: 620px;
+display: flex;
+background-color: #fecda7;
+}
+
+.footer__copyright {
+  margin: auto;
+  font-size: 34px;
+  font-weight: 400;
 }
