@@ -5,7 +5,7 @@
   margin: 0 auto;
   max-width: 1280px;
   min-width: 320px;
-  height: 100vh;
+  min-height: 100vw;
   border: 1px solid red;
   font-family: 'BasisGrotesqueMonoPro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -109,7 +109,7 @@
   }
 }
 
-.intro__text-container {
+.text-container {
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -117,41 +117,36 @@
 }
 
 @media screen and (max-width: 684px) {
-  .intro__text-container {
+  .text-container {
     align-items: center;
     text-align: center;
   }
 }
 
-.intro__title {
+.subtitle {
   margin: 0;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
-  word-spacing: -17px;
-  letter-spacing: -.9px;
+  word-spacing: -16px;
   font-kerning: auto;
 }
+
 @media screen and (max-width: 684px) {
-  .intro__title {
+  .subtitle {
     letter-spacing: 0;
     word-spacing: 0;
     font-size: calc(24px + (12 + 12 * 0.7) * ((100vw - 320px) / 1280));
   }
 }
 
-.intro__subtitle {
+.title {
   margin: 0;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .7px;
   color: #fecda7;
 }
-
-/* @media screen and (max-width: 684px) {
-  .intro__subtitle {
-  }
-} */
 
 .intro__image {
   padding-right: 90px;
@@ -220,4 +215,56 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
+}
+
+/*===== PEOPLE =====*/
+
+.people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 367px;
+}
+
+.people__subtitle {
+  max-width: 450px;
+}
+
+.people__cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 250px));
+  grid-auto-rows: auto;
+  gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid red;
+}
+
+.people__card {
+  width: 250px;
+}
+
+.quote {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.quote__author {
+  margin: 0;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.quote__text {
+  margin: 0;
+  font-size: 13px;
+  word-spacing: -4px;
+  line-height: 1.6;
 }
