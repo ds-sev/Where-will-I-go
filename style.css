@@ -14,7 +14,12 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  overflow: hidden;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 130px;
 }
 
 .wrapper {
