@@ -38,3 +38,26 @@
   color: #020202;
   text-decoration: none;
 }
+
+/*=====INTRO=====*/
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+.intro__title {
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+.intro__subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.intro__image {
+  max-height: 355px;
+  width: 355px;
+  object-fit: cover;
+}
