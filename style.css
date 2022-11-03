@@ -197,7 +197,7 @@
 }
 
 .places__image:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .places__image_reverse {
@@ -304,7 +304,7 @@
   color: #010101;
 }
 
-.quote__text {
+.text {
   margin: 0;
   font-size: 13px;
   font-weight: 400;
