@@ -160,7 +160,6 @@
 }
 
 .intro__image {
-  /*padding-right: 90px;*/
   max-height: 355px;
   min-width: 355px;
   object-fit: cover;
