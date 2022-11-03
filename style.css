@@ -6,7 +6,6 @@
   max-width: 1280px;
   min-width: 320px;
   min-height: 100vw;
-  border: 1px solid red;
   font-family: 'BasisGrotesquePro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -357,8 +356,12 @@
   }
 }
 
+ .footer__icon {
+ background-color:#fecda7;
+ border-radius: 50%;
+ }
 
-.footer__copyright {
+ .footer__copyright {
   font-size: 40px;
   font-weight: 700;
   margin: 0;
@@ -374,6 +377,16 @@
 .footer__link {
   text-decoration: none;
   color: #010101;
-  font-size: 34px;
-  font-weight: 400;
+  background: #fecda7;
+  padding: 8px;
+  transition: .7s linear;
+}
+
+.footer__link:hover {
+  color: #fff;
+  background: #f66d52;
+}
+
+.footer__link:hover .footer__icon {
+  background-color: #fff;
 }
