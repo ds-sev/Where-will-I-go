@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 442px) {
   .header__claim {
-    display: none;
+    opacity: .9;
   }
 }
 
@@ -92,6 +92,8 @@
 /*=====INTRO=====*/
 
 .intro {
+  width: 100%;
+  padding: 0;
   display: flex;
   gap: 100px;
   align-items: center;
@@ -109,6 +111,10 @@
   }
 }
 
+.intro__description {
+  padding-top: 8px;
+}
+
 .text-container {
   max-width: 600px;
   display: flex;
@@ -116,10 +122,15 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 684px) {
+@media screen and (max-width: 1174px) {
   .text-container {
-    align-items: center;
-    text-align: center;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .text-container {
+    gap: 20px;
   }
 }
 
@@ -149,16 +160,13 @@
 }
 
 .intro__image {
-  padding-right: 90px;
+  /*padding-right: 90px;*/
   max-height: 355px;
   min-width: 355px;
   object-fit: cover;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 964px) {
-  .intro__image {
-    padding-right: 0;
-  }
-}
+
 @media screen and (max-width: 684px) {
   .intro__image {
     width: 100%;
@@ -180,10 +188,17 @@
 
 .places__place {
   display: grid;
-  position: relative;
+  /* position: relative; */
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 530px;
 }
+
+/* @media screen and (max-width: 442px) {
+  .places__place {
+    grid-template-columns: 100%;
+
+  }
+} */
 
 .places__image {
   width: 100%;
@@ -202,9 +217,12 @@
 }
 
 .places__title {
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 34px;
   line-height: 1.2;
+  word-spacing: -10px;
+  letter-spacing: -.2px;
+  font-kerning: auto;
 }
 
 .places__paragraphs {
@@ -220,38 +238,41 @@
 /*===== PEOPLE =====*/
 
 .people {
-  width: 100%;
-  padding: 0;
-  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 367px;
-}
-.people__description {
-  padding-left: 15px;
-}
-.people__subtitle {
-
+  gap: 100px;
 }
 
-.people__cards {
-  display: grid;
-  padding: 0 15px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 48px;
-  margin: 0;
-  list-style: none;
-  border: 1px solid red;
-}
 @media screen and (max-width: 964px) {
-  .people__cards {
+  .people {
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .people {
     gap: 30px;
   }
 }
 
-.people__card {
+.people__cards {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 47px;
+  list-style: none;
+}
 
+@media screen and (max-width: 964px) {
+  .people__cards {
+    gap: 25px;
+  }
+}
+
+.people__card {
+  width: 250px;
 }
 
 .quote {
@@ -259,7 +280,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid red;
+}
+
+@media screen and (max-width: 833px) {
+  .quote {
+    gap: 5px;
+  }
 }
 
 .quote__author {
@@ -278,4 +304,17 @@
   word-spacing: -4px;
   line-height: 1.6;
   color: #010101;
+}
+
+.footer {
+  height: 620px;
+  display: flex;
+  background-color: #fecda7;
+  margin-top: 130px;
+}
+
+.footer__copyright {
+  margin: auto;
+  font-size: 34px;
+  font-weight: 400;
 }
