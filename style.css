@@ -232,29 +232,38 @@
 /*===== PEOPLE =====*/
 
 .people {
+  width: 100%;
+  padding: 0;
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 367px;
 }
-
+.people__description {
+  padding-left: 15px;
+}
 .people__subtitle {
-  max-width: 450px;
+
 }
 
 .people__cards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 250px));
-  grid-auto-rows: auto;
+  padding: 0 15px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 48px;
   margin: 0;
-  padding: 0;
   list-style: none;
   border: 1px solid red;
 }
+@media screen and (max-width: 964px) {
+  .people__cards {
+    gap: 30px;
+  }
+}
 
 .people__card {
-  width: 250px;
+
 }
 
 .quote {
