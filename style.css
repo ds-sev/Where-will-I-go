@@ -182,10 +182,17 @@
 
 .places__place {
   display: grid;
-  position: relative;
+  /* position: relative; */
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 530px;
 }
+
+/* @media screen and (max-width: 442px) {
+  .places__place {
+    grid-template-columns: 100%;
+
+  }
+} */
 
 .places__image {
   width: 100%;
@@ -275,9 +282,10 @@
 }
 
 .footer {
-height: 620px;
-display: flex;
-background-color: #fecda7;
+  height: 620px;
+  display: flex;
+  background-color: #fecda7;
+  margin-top: 130px;
 }
 
 .footer__copyright {
