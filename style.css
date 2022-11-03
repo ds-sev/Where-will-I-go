@@ -5,8 +5,7 @@
   margin: 0 auto;
   max-width: 1280px;
   min-width: 320px;
-  min-height: 100vw;
-  border: 1px solid red;
+  min-height: 100vh;
   font-family: 'BasisGrotesquePro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -89,9 +88,11 @@
 .link {
   color: #020202;
   text-decoration: none;
+  transition: ease-out .2s;
 }
 
  .link:hover {
+   transition: ease-in .2s;
    opacity: .6;
  }
 
@@ -288,6 +289,12 @@
   max-width: 400px;
 }
 
+@media screen and (max-width: 442px) {
+  .people__description {
+    max-width: 300px;
+  }
+}
+
 .people__cards {
   padding: 0;
   display: flex;
@@ -356,7 +363,6 @@
     margin-top: 70px;
   }
 }
-
 
 .footer__copyright {
   font-size: 40px;
