@@ -5,7 +5,7 @@
   margin: 0 auto;
   max-width: 1280px;
   min-width: 320px;
-  min-height: 100vw;
+  min-height: 100vh;
   font-family: 'BasisGrotesquePro', sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -103,10 +103,12 @@
 .link {
   color: #020202;
   text-decoration: none;
+  transition: ease-out .2s;
 }
 
  .link:hover {
    opacity: .6;
+   transition: ease-in .2s;
  }
 
 /*=====INTRO=====*/
@@ -436,7 +438,7 @@
  border-radius: 50%;
  }
 
- .footer__copyright {
+.footer__copyright {
   font-size: 40px;
   font-weight: 700;
   margin: 0;
