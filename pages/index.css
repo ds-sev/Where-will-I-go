@@ -1,1 +1,3 @@
 /* подключить после распределения стилей по бэм */
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
