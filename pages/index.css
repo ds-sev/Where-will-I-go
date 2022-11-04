@@ -1,3 +1,48 @@
-/* подключить после распределения стилей по бэм */
-@import url('./vendor/normalize.css');
-@import url('./vendor/fonts/fonts.css');
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
+
+@import url('../blocks/body/body.css');
+@import url('../blocks/content/content.css');
+@import url('../blocks/wrapper/wrapper.css');
+@import url('../blocks/list/__item/list__item.css');
+@import url('../blocks/link/link.css');
+@import url('../blocks/text-container/text-container.css');
+@import url('../blocks/subtitle/subtitle.css');
+@import url('../blocks/title/title.css');
+@import url('../blocks/quote/quote.css');
+@import url('../blocks/quote/__author/quote__author.css');
+@import url('../blocks/text/text.css');
+
+/* HEADER */
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__nav-list/header__nav-list.css');
+@import url('../blocks/header/__claim/header__claim.css');
+
+/* INTRO */
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/intro/__description/intro__description.css');
+@import url('../blocks/intro/__image/intro__image.css');
+
+/* PLACES */
+@import url('../blocks/places/places.css');
+@import url('../blocks/places/__item/places__item.css');
+@import url('../blocks/places/__image-hover-scale/places__image-hover-scale.css');
+@import url('../blocks/places/__image-hover-scale/_reverse/places__image-hover-scale_reverse.css');
+@import url('../blocks/places/__image/places__image.css');
+@import url('../blocks/places/__text/places__text.css');
+@import url('../blocks/places/__paragraphs/places__paragraphs.css');
+@import url('../blocks/places/__paragraph/places__paragraph.css');
+
+/* PEOPLE */
+@import url('../blocks/people/people.css');
+@import url('../blocks/people/__description/people__description.css');
+@import url('../blocks/people/__cards/people__cards.css');
+@import url('../blocks/people/__card/people__card.css');
+
+
+/* FOOTER */
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__icon/footer__icon.css');
+@import url('../blocks/footer/__copyright/footer__copyright.css');
+@import url('../blocks/footer/__copyright/_authors/footer__copyright_authors.css');
+@import url('../blocks/footer/__link/footer__link.css');
