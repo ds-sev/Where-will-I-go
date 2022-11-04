@@ -1,0 +1,9 @@
+.quote__author {
+  margin: 0;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 700;
+  color: #010101;
+}

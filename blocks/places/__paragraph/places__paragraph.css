@@ -1,0 +1,20 @@
+.places__paragraph {
+  padding-top: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 684px) {
+  .places__paragraph {
+    padding-top: 8px;
+  }
+}
+
+.places__paragraph:first-of-type {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 684px) {
+  .places__paragraph:first-of-type {
+    padding-top: 12px;
+  }
+}

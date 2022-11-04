@@ -1,0 +1,19 @@
+.people__cards {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 47px;
+  list-style: none;
+}
+
+@media screen and (max-width: 964px) {
+  .people__cards {
+    gap: 25px;
+  }
+}

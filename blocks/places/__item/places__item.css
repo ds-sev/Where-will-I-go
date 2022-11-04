@@ -1,0 +1,12 @@
+.places__item {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+@media screen and (max-width: 684px) {
+  .places__item {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}

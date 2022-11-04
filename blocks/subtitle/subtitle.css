@@ -1,0 +1,17 @@
+.subtitle {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.5px;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+@media screen and (max-width: 684px) {
+  .subtitle {
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-size: calc(24px + (12 + 12 * 0.7) * ((100vw - 320px) / 1280));
+  }
+}

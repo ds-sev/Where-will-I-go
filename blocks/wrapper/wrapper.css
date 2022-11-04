@@ -1,0 +1,8 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1142px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}

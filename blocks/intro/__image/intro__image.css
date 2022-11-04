@@ -1,0 +1,17 @@
+.intro__image {
+  max-height: 355px;
+  min-width: 355px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 684px) {
+  .intro__image {
+    width: 100%;
+    min-width: 320px;
+    -o-object-position: center;
+       object-position: center;
+  }
+}

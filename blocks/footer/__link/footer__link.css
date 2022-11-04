@@ -1,0 +1,18 @@
+.footer__link {
+  text-decoration: none;
+  color: #010101;
+  background: #fecda7;
+  padding: 8px;
+  -webkit-transition: .7s linear;
+  -o-transition: .7s linear;
+  transition: .7s linear;
+}
+
+.footer__link:hover {
+  color: #fff;
+  background: #f66d52;
+}
+
+.footer__link:hover .footer__icon {
+  background-color: #fff;
+}

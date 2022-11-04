@@ -1,0 +1,13 @@
+.places__image-hover-scale_reverse {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (max-width: 684px) {
+  .places__image-hover-scale_reverse {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}

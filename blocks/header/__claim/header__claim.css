@@ -1,0 +1,10 @@
+.header__claim {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 442px) {
+  .header__claim {
+    opacity: .9;
+  }
+}
