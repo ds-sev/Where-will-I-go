@@ -88,11 +88,9 @@
 .link {
   color: #020202;
   text-decoration: none;
-  transition: ease-out .2s;
 }
 
  .link:hover {
-   transition: ease-in .2s;
    opacity: .6;
  }
 
@@ -289,12 +287,6 @@
   max-width: 400px;
 }
 
-@media screen and (max-width: 442px) {
-  .people__description {
-    max-width: 300px;
-  }
-}
-
 .people__cards {
   padding: 0;
   display: flex;
@@ -364,6 +356,11 @@
   }
 }
 
+ .footer__icon {
+ background-color:#fecda7;
+ border-radius: 50%;
+ }
+
 .footer__copyright {
   font-size: 40px;
   font-weight: 700;
@@ -380,6 +377,16 @@
 .footer__link {
   text-decoration: none;
   color: #010101;
-  font-size: 34px;
-  font-weight: 400;
+  background: #fecda7;
+  padding: 8px;
+  transition: .7s linear;
+}
+
+.footer__link:hover {
+  color: #fff;
+  background: #f66d52;
+}
+
+.footer__link:hover .footer__icon {
+  background-color: #fff;
 }
