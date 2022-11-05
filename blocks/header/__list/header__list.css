@@ -1,4 +1,4 @@
-.header__nav-list {
+.header__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 442px) {
-  .header__nav-list {
+  .header__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
